@@ -2,6 +2,9 @@ FROM php:fpm
 
 MAINTAINER Scott Wilcox <scott@dor.ky>
 
+# exit if a command fails
+set -e
+
 # Stop upstart from complaining
 RUN dpkg-divert --local --rename --add /sbin/initctl
 RUN ln -sf /bin/true /sbin/initctl
