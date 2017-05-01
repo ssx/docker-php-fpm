@@ -8,13 +8,8 @@ development or production use.
 ### Currently included extensions
 
  - GD
- - Curl
  - Intl
  - BZ2
- - JSON
- - XML
- - OpCache
- - Zip
 
 
  ### Currently included programs

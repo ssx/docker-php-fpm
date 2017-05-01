@@ -9,10 +9,10 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Dependancies for extensions
 RUN apt-get update -yqq
-RUN apt-get install libcurl3-dev libicu-dev libpng-dev libjpeg-dev libxml2-dev libbz2-dev  -yqq
+RUN apt-get install libicu-dev libpng-dev libjpeg-dev libbz2-dev  -yqq
 
 # Install extensions
-RUN docker-php-ext-install curl json intl gd xml zip bz2 opcache
+RUN docker-php-ext-install intl gd bz2
 
 # Installer composer
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer && chmod +x /usr/local/bin/composer
