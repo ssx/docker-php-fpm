@@ -12,7 +12,7 @@ development or production use.
  - BZ2
 
 
- ### Currently included programs
+### Currently included programs
 
   - Composer
 
