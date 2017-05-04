@@ -15,7 +15,7 @@ RUN apt-get update -yqq
 RUN apt-get install libicu-dev libpng-dev libjpeg-dev libbz2-dev  -yqq
 
 # Install extensions
-RUN docker-php-ext-install intl gd bz2
+RUN docker-php-ext-install intl gd bz2 pdo_mysql
 
 # Installer composer
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer && chmod +x /usr/local/bin/composer
