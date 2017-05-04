@@ -10,6 +10,7 @@ development or production use.
  - GD
  - Intl
  - BZ2
+ - pdo_mysql
 
 
 ### Currently included programs
