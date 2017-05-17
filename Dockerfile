@@ -29,4 +29,6 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 EXPOSE 9000
 
+WORKDIR /www
+
 CMD ["php-fpm"]
