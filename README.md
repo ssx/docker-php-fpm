@@ -11,7 +11,7 @@ development or production use.
  - Intl
  - BZ2
  - pdo_mysql
-
+ - pcntl
 
 ### Currently included programs
 
