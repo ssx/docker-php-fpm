@@ -34,7 +34,7 @@ RUN apt-get update && apt-get install -y \
 		libgd-dev
 
 # Install extensions
-RUN docker-php-ext-install pdo pdo_mysql mcrypt mysqli pdo_sqlite intl bz2
+RUN docker-php-ext-install pdo pdo_mysql mcrypt mysqli pdo_sqlite intl bz2 pcntl
 RUN docker-php-ext-configure gd \
         --enable-gd-native-ttf \
         --with-jpeg-dir=/usr/lib/x86_64-linux-gnu \
